@@ -6,6 +6,8 @@
 
 Two similar scripts run and save data simultaneously on command. The first script's operation is followed by the second script that repeats the same operation as the first script and also advances the first script.
 
+#
+
 ### CODE
 
 Script 1: news_searcher.py
@@ -77,6 +79,8 @@ Setup Requirements:
 A valid Google API key and a custom search engine ID are required to use the Google Custom Search JSON API.
 
 The googleapiclient.discovery library must be installed to run these scripts.
+
+#
 
 ### SCRIPTS
 
