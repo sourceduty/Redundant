@@ -10,16 +10,6 @@ Two similar scripts run and save data simultaneously on command. The first scrip
 
 ### CODE
 
-Script 1: news_searcher.py
-
-This script is responsible for periodically fetching the latest news article links that pertain to North American news. It simulates an API call to a news service provider and saves the retrieved links to a file named data.txt.
-
-Script 2: news_searcher_advancer.py
-
-This script performs the same operations as the first script—fetching and saving news links—but it also contains a mechanism to "advance" the operation of the first script, potentially by signaling it to fetch new data or to perform the next step in its operation.
-
-#
-
 Script 1: The Search Initiator (searcher.py)
 
 This script is responsible for periodically fetching the latest news article links that pertain to North American news. It simulates an API call to a news service provider and saves the retrieved links to a file named data.txt.
