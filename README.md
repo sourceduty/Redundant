@@ -22,7 +22,7 @@ This script performs the same operations as the first script—fetching and savi
 
 Script 1: The Search Initiator (searcher.py)
 
-The first script, searcher.py, acts as the search initiator. It uses the Google Custom Search JSON API to query the latest articles on British history. Upon receiving the search results, the script writes the article links to a file named data.txt. This script runs in a loop, performing a new search every 60 seconds, ensuring that the most recent content is continually sought out.
+This script is responsible for periodically fetching the latest news article links that pertain to North American news. It simulates an API call to a news service provider and saves the retrieved links to a file named data.txt.
 
 Key Features:
 
@@ -46,7 +46,7 @@ The script runs indefinitely and is designed to be executed in parallel with ano
 
 Script 2: The Search Follower (follower.py)
 
-The second script, follower.py, is designed to detect when searcher.py has updated the data.txt file with new search results. Once it notices a change in the file size (indicating new content), it reads the updated data. It can then perform its own search to gather additional results or process the existing links further. This script checks for updates every 30 seconds and can be programmed to trigger searcher.py for another search iteration, creating a responsive and dynamic search system.
+This script performs the same operations as the first script—fetching and saving news links—but it also contains a mechanism to "advance" the operation of the first script, potentially by signaling it to fetch new data or to perform the next step in its operation.
 
 Key Features:
 
